@@ -1,0 +1,22 @@
+name = "mocklib"
+description = ""
+version = "0.1.0-dev"
+
+authors = ["Alejandro R. Mosteo"]
+maintainers = ["Alejandro R. Mosteo <alejandro@mosteo.com>"]
+maintainers-logins = ["mosteo"]
+licenses = "MIT OR Apache-2.0 WITH LLVM-exception"
+website = ""
+tags = []
+
+[environment.'case(os)'.'...'.MOCKVAR]
+prepend = "OKDOTS"
+
+#[environment.'case(os)'.'linux'.MOCKVAR_LINUX]
+#prepend = "OKLINUX"
+
+#[environment.'case(os)'.'macos'.MOCKVAR_MACOS]
+#prepend = "OKMACOS"
+
+#[environment.'case(os)'.'linux|macos'.MOCKVAR_MULTI]
+#prepend = "OKMULTI"
